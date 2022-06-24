@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+//Light mode
+.lightMode {
+  background-color: #f6eaf3;
+}
+
+.lightModeBtn {
+  background-color: #f7f8fa !important;
+  border: 2px solid #ffffff !important;
+  color: #000 !important;
+}
+
+.lightModeConnectBtn {
+  background-color: #fdeaf1 !important;
+  border: 2px solid #ffffff !important;
+  color: #d50066 !important;
+}
+
+body {
+  background-color: #28232c;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.home {
+  padding: 2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &DarkmodeBtn {
+    background-color: #212429;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 2px solid #191b1f;
+    border-radius: 16px;
+    font-size: 18px;
+  }
+
+  &LocaleSwitcher {
+    background-color: #212429;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 2px solid #191b1f;
+    border-radius: 16px;
+    font-size: 18px;
+  }
+}
+
+.connectMetamask {
+  margin-top: 8em;
+  display: flex;
+  justify-content: center;
+
+  &Btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #191b1f;
+    background-color: #172a42;
+    border-radius: 16px;
+    margin-top: 5em;
+    color: #5090ea;
+    padding: 1em 1em;
+    font-weight: bold;
+
+    &Logo {
+      width: 100px;
+    }
+  }
+}
