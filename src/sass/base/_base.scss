@@ -21,8 +21,19 @@
   color: #d50066 !important;
 }
 
+.lightModeAccountBalance {
+  p {
+    color: #000 !important;
+  }
+
+  .walletBalanceNumbers {
+    border: 2px solid #000 !important;
+    color: #000 !important;
+  }
+}
+
 body {
-  background-color: #28232c;
+  background-color: #1c1c1e;
   background-position: center 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -81,5 +92,25 @@ body {
     &Logo {
       width: 100px;
     }
+  }
+}
+
+.disconnectMetamaskBtn {
+  margin-top: 0;
+}
+
+.walletBalance {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  &Numbers {
+    margin-left: 2em;
+    border: 2px solid #fff;
+    padding: 0.5em 2em;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
   }
 }

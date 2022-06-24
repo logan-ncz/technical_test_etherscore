@@ -1,5 +1,8 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
+// i18next module used to change the language
+
 i18next.use(initReactI18next).init({
   resources: {
     en: {
@@ -7,6 +10,7 @@ i18next.use(initReactI18next).init({
         darkmodeBtn: 'Light mode',
         connectBtn: 'Connect with Metamask',
         disconnectBtn: 'Disconnect',
+        accountBalance: 'Account Balance',
       },
     },
     fr: {
@@ -14,6 +18,7 @@ i18next.use(initReactI18next).init({
         darkmodeBtn: 'Mode clair',
         connectBtn: 'Connexion avec Metamask',
         disconnectBtn: 'Déconnexion',
+        accountBalance: 'Solde du compte',
       },
     },
   },

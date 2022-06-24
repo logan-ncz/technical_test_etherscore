@@ -1,5 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
+/**
+ * Component used to change render the language select and change the language onClick
+ * @component
+ *
+ * @returns
+ */
 export default function LocaleSwitcher() {
   const { i18n } = useTranslation();
 

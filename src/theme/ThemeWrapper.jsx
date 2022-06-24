@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
+/**
+ * Component used to render the light mode with ThemeContext
+ * @component
+ *
+ * @param {*} props
+ * @returns
+ */
 export default function ThemeContextWrapper(props) {
   const [theme, setTheme] = useState(themes.dark);
 
@@ -21,6 +28,10 @@ export default function ThemeContextWrapper(props) {
         document
           .querySelector('.connectMetamaskBtn')
           .classList.add('lightModeConnectBtn');
+        document
+          .querySelector('.walletBalance')
+          .classList.add('lightModeAccountBalance');
+
         break;
       case themes.dark:
       default:
@@ -34,6 +45,9 @@ export default function ThemeContextWrapper(props) {
         document
           .querySelector('.connectMetamaskBtn')
           .classList.remove('lightModeConnectBtn');
+        document
+          .querySelector('.walletBalance')
+          .classList.remove('lightModeAccountBalance');
         break;
     }
   }, [theme]);

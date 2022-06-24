@@ -3,7 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 
-export default function Navbar() {
+/**
+ * Component used to render the Navbar
+ * @component
+ *
+ * @param {*} props
+ * @returns
+ */
+export default function Navbar(props) {
   const { t } = useTranslation();
 
   const [lightMode, setLightMode] = useState(true);
@@ -25,6 +32,7 @@ export default function Navbar() {
           )}
         </ThemeContext.Consumer>
       </div>
+      {props.children && props.children}
       <div className="navbarEnd">
         <LocaleSwitcher />
       </div>
