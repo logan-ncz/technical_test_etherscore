@@ -7,7 +7,7 @@ Dapp to display its account balance and number of transactions
 To get started, first clone this repo:
 
 ```bash
-> git clone https://github.com/logan-ncz/technical_test_etherscore && cd palisade
+> git clone https://github.com/logan-ncz/technical_test_etherscore
 ```
 
 Next, install npm dependencies

@@ -8,9 +8,9 @@ import { ThemeContext, themes } from '../contexts/ThemeContext';
  * @component
  *
  * @param {*} props
- * @returns
+ * @returns {}
  */
-export default function Navbar(props) {
+function Navbar(props) {
   const { t } = useTranslation();
 
   const [lightMode, setLightMode] = useState(true);
@@ -39,3 +39,5 @@ export default function Navbar(props) {
     </nav>
   );
 }
+
+export default Navbar;

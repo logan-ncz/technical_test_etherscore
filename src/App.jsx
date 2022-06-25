@@ -1,13 +1,16 @@
 import LogoMetamask from './assets/logo_metamask.png';
 import Navbar from './components/Navbar';
 import { useTranslation } from 'react-i18next';
-import Web3 from 'web3/dist/web3.min.js';
 import { useState } from 'react';
-import truncateEthAddress from 'truncate-eth-address';
-import getBalance from './server/balance';
-import GetTransactions from './server/transactions';
 
-export default function App() {
+import Web3 from 'web3/dist/web3.min.js';
+
+import getBalance from './server/balance';
+
+//Module used for shortening the ETH address
+import truncateEthAddress from 'truncate-eth-address';
+
+function App() {
   const [isConnected, setIsConnected] = useState(false);
   const [walletAddress, setWalletAddress] = useState('');
 
@@ -16,13 +19,10 @@ export default function App() {
   const web3 = new Web3(Web3.givenProvider || 'ws://localhost:3000');
 
   const connectMetamask = () => {
-    // window.ethereum.request({ method: 'eth_requestAccounts' });
     web3.eth.requestAccounts().then((value) => {
-      console.log(value);
       setWalletAddress(value[0]);
       setIsConnected(true);
       getBalance(value[0]);
-      GetTransactions(value[0]);
     });
   };
 
@@ -53,10 +53,16 @@ export default function App() {
       </div>
       {isConnected && (
         <div className="walletBalance">
-          <p>{t('accountBalance')} </p>
+          <p>{t('walletBalanceTitle')} </p>
           <p className="walletBalanceNumbers"></p>
         </div>
       )}
+      <div className="walletBalance walletBalanceDisplayNone">
+        <p>{t('walletBalanceTitle')} </p>
+        <p className="walletBalanceNumbers"></p>
+      </div>
     </div>
   );
 }
+
+export default App;

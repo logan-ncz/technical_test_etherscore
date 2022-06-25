@@ -10,7 +10,7 @@ i18next.use(initReactI18next).init({
         darkmodeBtn: 'Light mode',
         connectBtn: 'Connect with Metamask',
         disconnectBtn: 'Disconnect',
-        accountBalance: 'Account Balance',
+        walletBalanceTitle: 'Account Balance',
       },
     },
     fr: {
@@ -18,7 +18,7 @@ i18next.use(initReactI18next).init({
         darkmodeBtn: 'Mode clair',
         connectBtn: 'Connexion avec Metamask',
         disconnectBtn: 'Déconnexion',
-        accountBalance: 'Solde du compte',
+        walletBalanceTitle: 'Solde du compte',
       },
     },
   },
