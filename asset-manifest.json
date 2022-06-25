@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/technical_test_etherscore/static/css/main.8d7ccd7d.css",
+    "main.js": "/technical_test_etherscore/static/js/main.dc618a08.js",
+    "static/media/logo_metamask.png": "/technical_test_etherscore/static/media/logo_metamask.30289624c0c1d284fbff.png",
+    "index.html": "/technical_test_etherscore/index.html",
+    "main.8d7ccd7d.css.map": "/technical_test_etherscore/static/css/main.8d7ccd7d.css.map",
+    "main.dc618a08.js.map": "/technical_test_etherscore/static/js/main.dc618a08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d7ccd7d.css",
+    "static/js/main.dc618a08.js"
+  ]
+}
