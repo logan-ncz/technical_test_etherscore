@@ -7,7 +7,8 @@ i18next.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        darkmodeBtn: 'Light mode',
+        lightmodeBtn: 'Light mode',
+        darkmodeBtn: 'Dark mode',
         connectBtn: 'Connect with Metamask',
         disconnectBtn: 'Disconnect',
         walletBalanceTitle: 'Account Balance',
@@ -15,7 +16,8 @@ i18next.use(initReactI18next).init({
     },
     fr: {
       translation: {
-        darkmodeBtn: 'Mode clair',
+        lightmodeBtn: 'Mode clair',
+        darkmodeBtn: 'Mode sombre',
         connectBtn: 'Connexion avec Metamask',
         disconnectBtn: 'Déconnexion',
         walletBalanceTitle: 'Solde du compte',

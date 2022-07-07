@@ -27,7 +27,7 @@ function App() {
   };
 
   const disconnectMetamask = () => {
-    window.location.reload(false);
+    setIsConnected(false);
   };
 
   return (

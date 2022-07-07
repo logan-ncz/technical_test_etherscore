@@ -9,7 +9,7 @@ import Web3 from 'web3/dist/web3.min';
 function getBalance(walletAddress) {
   const web3 = new Web3(
     new Web3.providers.HttpProvider(
-      'https://mainnet.infura.io/v3/745d93a39c9d4a38ade8c528115811d3'
+      'https://goerli.infura.io/v3/745d93a39c9d4a38ade8c528115811d3'
     )
   );
 

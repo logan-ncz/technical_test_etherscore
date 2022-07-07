@@ -27,7 +27,7 @@ function Navbar(props) {
                 changeTheme(lightMode ? themes.light : themes.dark);
               }}
             >
-              {t('darkmodeBtn')}
+              {lightMode ? t('darkmodeBtn') : t('lightmodeBtn')}
             </button>
           )}
         </ThemeContext.Consumer>
